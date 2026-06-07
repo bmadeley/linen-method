@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Linen Method | Dallas, TX</title>
+  <meta name="description" content="The Linen Method is a Dallas, TX home organizing service for busy moms and families. Specializing in home organizing, kitchen & pantry, closets, and office organization. Refined spaces. Peaceful lives." />
+  <meta name="keywords" content="home organizer Dallas TX, professional organizer Dallas, kitchen pantry organizing, closet organization Dallas, office organizing" />
+  <meta property="og:title" content="The Linen Method | Dallas, TX" />
+  <meta property="og:description" content="Refined spaces. Peaceful lives. Home organizing for busy moms and families in Dallas, TX." />
+  <meta name="theme-color" content="#FAF7F2" />
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAA6klEQVR42u3aMQrCMBgGUEdH507OCh5AcPQaHsDBi3hbF8FFJ2uRlkZNbNq84dvzPQLJHzK7XS/3kjMDAAAAAAAAAAAAAAAAAAAAXtmtq+AAAAAAAAAAAJJkc1jWKQ6gWT4VQnSA83Hfm5CFbU+rOsUBNMu/A8RGyALgWbQLIOUuGBygrWwfQEwEAEMChJYH0AIQCwEAAAD5A6S8FmdxDPZhdM0Gk7oKhwA0ESY3C4SUH8U4DOCHafDf5bMGGO2TWKwHEQAAAAAAAKAAgGox/zgAAAAAEB0gZOG5BQAAAAAAAPBbHAAAAN/nAVKqO4rjvpPeAAAAAElFTkSuQmCC" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:       #FAF7F2;
+      --accent:   #C9B99A;
+      --accent2:  #8B7355;
+      --text:     #3D3530;
+      --light:    #F0EBE3;
+      --white:    #FFFFFF;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Jost', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 5%;
+      background: rgba(250, 247, 242, 0.95);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid var(--light);
+    }
+
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.82rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: var(--text);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--accent2); }
+
+    /* ── HERO ── */
+    #home {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 8rem 5% 5rem;
+      background: linear-gradient(160deg, #FAF7F2 60%, #EDE5D8 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    #home::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -80px;
+      width: 400px; height: 400px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #E8DDD0 0%, transparent 70%);
+      opacity: 0.5;
+    }
+
+    .hero-tag {
+      font-size: 0.78rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--accent2);
+      font-weight: 400;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3.5rem, 8vw, 6.5rem);
+      font-weight: 500;
+      line-height: 1.1;
+      letter-spacing: 0.02em;
+      margin-bottom: 1.25rem;
+      color: var(--text);
+    }
+
+    h1 em {
+      font-style: italic;
+      color: var(--accent2);
+    }
+
+    .hero-tagline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.3rem, 2.8vw, 1.8rem);
+      font-weight: 400;
+      font-style: italic;
+      color: #5A4A3A;
+      margin-bottom: 2.5rem;
+      letter-spacing: 0.04em;
+    }
+
+    .hero-sub {
+      font-size: 1.05rem;
+      font-weight: 400;
+      color: #5A4A3A;
+      max-width: 480px;
+      margin-bottom: 3rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.85rem 2.5rem;
+      background: var(--accent2);
+      color: var(--white);
+      text-decoration: none;
+      font-size: 0.78rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      border: none;
+      cursor: pointer;
+      transition: background 0.25s, transform 0.2s;
+    }
+
+    .btn:hover { background: #7A6348; transform: translateY(-1px); }
+
+    .btn-outline {
+      background: transparent;
+      border: 1px solid var(--accent2);
+      color: var(--accent2);
+      margin-left: 1rem;
+    }
+
+    .btn-outline:hover { background: var(--accent2); color: var(--white); }
+
+    /* ── SECTIONS ── */
+    section { padding: 6rem 5%; }
+
+    .section-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--accent2);
+      margin-bottom: 0.75rem;
+    }
+
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 300;
+      line-height: 1.2;
+      margin-bottom: 1.25rem;
+    }
+
+    .divider {
+      width: 48px;
+      height: 1px;
+      background: var(--accent);
+      margin: 1.5rem 0;
+    }
+
+    /* ── SERVICES ── */
+    #services { background: var(--white); }
+
+    .services-intro {
+      max-width: 560px;
+      margin-bottom: 3.5rem;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .service-card {
+      background: var(--bg);
+      padding: 2.5rem 2rem;
+      border-top: 2px solid var(--accent);
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(61, 53, 48, 0.08);
+    }
+
+    .service-icon {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .service-card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.35rem;
+      font-weight: 400;
+      margin-bottom: 0.75rem;
+    }
+
+    .service-card p {
+      font-size: 0.9rem;
+      color: #6A5A50;
+      line-height: 1.7;
+    }
+
+    /* ── ABOUT ── */
+    #about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+
+    .about-image {
+      aspect-ratio: 4/5;
+      background: linear-gradient(135deg, #E8DDD0, #C9B99A);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      font-style: italic;
+      letter-spacing: 0.06em;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .about-text p {
+      color: #6A5A50;
+      margin-bottom: 1.25rem;
+      font-size: 0.97rem;
+    }
+
+    /* ── STRIP ── */
+    .strip {
+      background: var(--accent2);
+      color: var(--white);
+      text-align: center;
+      padding: 4rem 5%;
+    }
+
+    .strip h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      font-weight: 300;
+      color: var(--white);
+      margin-bottom: 0.5rem;
+    }
+
+    .strip p {
+      font-size: 0.95rem;
+      opacity: 0.85;
+      margin-bottom: 2rem;
+    }
+
+    .btn-white {
+      background: var(--white);
+      color: var(--accent2);
+    }
+
+    .btn-white:hover { background: var(--bg); transform: translateY(-1px); }
+
+    /* ── CONTACT ── */
+    #contact { background: var(--white); }
+
+    .contact-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 5rem;
+      align-items: start;
+      max-width: 900px;
+    }
+
+    .contact-info h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+
+    .contact-info p {
+      font-size: 0.92rem;
+      color: #6A5A50;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-detail {
+      margin-top: 2rem;
+    }
+
+    .contact-detail span {
+      display: block;
+      font-size: 0.72rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent2);
+      margin-bottom: 0.25rem;
+      margin-top: 1rem;
+    }
+
+    form { display: flex; flex-direction: column; gap: 1rem; }
+
+    form input,
+    form select,
+    form textarea {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 300;
+      padding: 0.85rem 1rem;
+      border: 1px solid #DDD5CA;
+      background: var(--bg);
+      color: var(--text);
+      outline: none;
+      transition: border-color 0.2s;
+      width: 100%;
+    }
+
+    form input:focus,
+    form select:focus,
+    form textarea:focus { border-color: var(--accent2); }
+
+    form textarea { resize: vertical; min-height: 130px; }
+
+    form button { align-self: flex-start; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--text);
+      color: #C4B8AE;
+      text-align: center;
+      padding: 2.5rem 5%;
+      font-size: 0.82rem;
+      letter-spacing: 0.06em;
+    }
+
+    footer a { color: var(--accent); text-decoration: none; }
+    footer a:hover { color: var(--white); }
+
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      color: var(--white);
+      display: block;
+      margin-bottom: 0.75rem;
+      letter-spacing: 0.1em;
+    }
+
+    /* ── HAMBURGER ── */
+    .nav-hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .nav-hamburger span {
+      display: block;
+      width: 24px;
+      height: 1.5px;
+      background: var(--text);
+      transition: all 0.3s;
+    }
+    .nav-hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+    .nav-hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      #about {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      .contact-wrap {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+
+      .nav-hamburger { display: flex; }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0; right: 0;
+        flex-direction: column;
+        gap: 0;
+        background: rgba(250, 247, 242, 0.98);
+        border-bottom: 1px solid var(--light);
+        padding: 1rem 5%;
+      }
+
+      .nav-links.open { display: flex; }
+
+      .nav-links li { padding: 0.75rem 0; border-bottom: 1px solid var(--light); }
+      .nav-links li:last-child { border-bottom: none; }
+
+      .btn-outline { margin-left: 0; margin-top: 0.75rem; }
+
+      .hero-buttons { display: flex; flex-direction: column; align-items: center; gap: 0.75rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#home" class="nav-logo" style="display:flex;align-items:center;gap:0.75rem;">
+      <svg width="58" height="58" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Horizontal base book -->
+        <rect x="2" y="66" width="56" height="8" rx="1.5" fill="#8B6A45"/>
+        <rect x="2" y="66" width="56" height="2.5" rx="1" fill="#7A5A35"/>
+        <!-- Tall book -->
+        <rect x="7" y="18" width="14" height="48" rx="1.5" fill="#3D2B1A"/>
+        <rect x="7" y="18" width="14" height="4" rx="1" fill="#2D1E10"/>
+        <line x1="11" y1="24" x2="11" y2="64" stroke="#FAF7F2" stroke-width="1.2" stroke-opacity="0.6"/>
+        <!-- Short book -->
+        <rect x="24" y="30" width="12" height="36" rx="1.5" fill="#8B6A45"/>
+        <rect x="24" y="30" width="12" height="3.5" rx="1" fill="#7A5A35"/>
+        <line x1="27.5" y1="36" x2="27.5" y2="64" stroke="#FAF7F2" stroke-width="1.2" stroke-opacity="0.6"/>
+        <!-- Plant pot on base book -->
+        <path d="M40 66 L42 60 L54 60 L56 66 Z" fill="#1A1008"/>
+        <rect x="41" y="57.5" width="14" height="3.5" rx="1" fill="#3D2B1A"/>
+        <!-- Stem -->
+        <line x1="47" y1="57" x2="47" y2="46" stroke="#2A4020" stroke-width="1.5"/>
+        <!-- Leaves -->
+        <ellipse cx="47" cy="40" rx="4.5" ry="11" fill="#3A6E2A" transform="rotate(-12 47 40)"/>
+        <ellipse cx="53" cy="36" rx="4" ry="10" fill="#2E5E20" transform="rotate(18 53 36)"/>
+        <ellipse cx="41" cy="38" rx="3.5" ry="9" fill="#3A6E2A" transform="rotate(-28 41 38)"/>
+      </svg>
+      The Linen Method
+    </a>
+    <button class="nav-hamburger" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open');" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" style="position:relative;">
+    <svg style="position:absolute;opacity:0.06;width:420px;height:420px;pointer-events:none;" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="2" y="66" width="56" height="8" rx="1.5" fill="#8B7355"/>
+      <rect x="7" y="18" width="14" height="48" rx="1.5" fill="#8B7355"/>
+      <rect x="24" y="30" width="12" height="36" rx="1.5" fill="#8B7355"/>
+      <path d="M40 66 L42 60 L54 60 L56 66 Z" fill="#8B7355"/>
+      <line x1="47" y1="57" x2="47" y2="46" stroke="#5A6A4A" stroke-width="1"/>
+      <ellipse cx="47" cy="40" rx="4.5" ry="11" fill="#7A9B6A" transform="rotate(-12 47 40)"/>
+      <ellipse cx="53" cy="36" rx="4" ry="10" fill="#6A8A5A" transform="rotate(18 53 36)"/>
+      <ellipse cx="41" cy="38" rx="3.5" ry="9" fill="#7A9B6A" transform="rotate(-28 41 38)"/>
+    </svg>
+    <p class="hero-tag">Home Organizing · Dallas, TX</p>
+    <h1>The <em>Linen</em> Method</h1>
+    <p class="hero-tagline">Refined spaces. Peaceful lives.</p>
+    <p class="hero-sub">Thoughtful, intentional organizing for busy moms and families who deserve a home that finally works for them.</p>
+    <div class="hero-buttons">
+      <a href="#contact" class="btn">Book a Consultation</a>
+      <a href="#services" class="btn btn-outline">Our Services</a>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="services-intro">
+      <p class="section-label">What I Do</p>
+      <h2>Organizing that fits your life</h2>
+      <div class="divider"></div>
+      <p>Every space I touch is thoughtfully curated to reflect how you actually live — not how a magazine thinks you should.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#8B7355" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 10.5L12 3l9 7.5V21a1 1 0 01-1 1H4a1 1 0 01-1-1V10.5z"/>
+            <path d="M9 22V13h6v9"/>
+          </svg>
+        </div>
+        <h3>Home Organizing</h3>
+        <p>Whole-home decluttering and organization systems tailored to your family's rhythm and routines.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#8B7355" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="1"/>
+            <line x1="3" y1="9" x2="21" y2="9"/>
+            <line x1="3" y1="15" x2="21" y2="15"/>
+            <line x1="9" y1="9" x2="9" y2="21"/>
+          </svg>
+        </div>
+        <h3>Kitchen & Pantry</h3>
+        <p>Functional, beautiful kitchen and pantry systems that make meal prep effortless and mornings calmer.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#8B7355" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a2 2 0 00-2 2v.5L4 10h16l-6-4.5V5a2 2 0 00-2-2z"/>
+            <rect x="4" y="10" width="16" height="11" rx="1"/>
+            <line x1="12" y1="10" x2="12" y2="21"/>
+          </svg>
+        </div>
+        <h3>Closet Organization</h3>
+        <p>A curated wardrobe and closet system so getting dressed feels like a joy, not a chore.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#8B7355" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="20" height="14" rx="1.5"/>
+            <line x1="8" y1="22" x2="16" y2="22"/>
+            <line x1="12" y1="18" x2="12" y2="22"/>
+          </svg>
+        </div>
+        <h3>Office Organization</h3>
+        <p>A streamlined home office that supports your focus, productivity, and professional presence.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEFORE & AFTER -->
+  <section id="gallery" style="background:var(--bg);">
+    <div style="max-width:560px; margin-bottom:3.5rem;">
+      <p class="section-label">The Transformation</p>
+      <h2>Before & After</h2>
+      <div class="divider"></div>
+      <p>See the difference I make — real spaces, real results.</p>
+    </div>
+
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:2.5rem;">
+
+      <!-- PAIR 1 -->
+      <div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.75rem;">
+          <div>
+            <div style="aspect-ratio:4/5; overflow:hidden;">
+              <img src="pantry-before.jpg" alt="Pantry before organizing" style="width:100%;height:100%;object-fit:cover;display:block;"/>
+            </div>
+            <p style="font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:#8B7355; margin-top:0.5rem; text-align:center;">Before</p>
+          </div>
+          <div>
+            <div style="aspect-ratio:4/5; overflow:hidden;">
+              <img src="pantry-after.jpg" alt="Pantry after organizing" style="width:100%;height:100%;object-fit:cover;display:block;"/>
+            </div>
+            <p style="font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:#8B7355; margin-top:0.5rem; text-align:center;">After</p>
+          </div>
+        </div>
+        <p style="font-family:'Cormorant Garamond',serif; font-size:1.1rem; font-weight:400; color:#3D3530; margin-top:1rem; text-align:center;">Kitchen Pantry</p>
+      </div>
+
+      <!-- PAIR 2 -->
+      <div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.75rem;">
+          <div>
+            <div style="aspect-ratio:4/5; overflow:hidden;">
+              <img src="closet-before.jpg" alt="Closet before organizing" style="width:100%;height:100%;object-fit:cover;display:block;"/>
+            </div>
+            <p style="font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:#8B7355; margin-top:0.5rem; text-align:center;">Before</p>
+          </div>
+          <div>
+            <div style="aspect-ratio:4/5; overflow:hidden;">
+              <img src="closet-after.jpg" alt="Closet after organizing" style="width:100%;height:100%;object-fit:cover;display:block;"/>
+            </div>
+            <p style="font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:#8B7355; margin-top:0.5rem; text-align:center;">After</p>
+          </div>
+        </div>
+        <p style="font-family:'Cormorant Garamond',serif; font-size:1.1rem; font-weight:400; color:#3D3530; margin-top:1rem; text-align:center;">Bedroom Closet</p>
+      </div>
+
+      <!-- PAIR 3 -->
+      <div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.75rem;">
+          <div>
+            <div style="aspect-ratio:4/5; overflow:hidden;">
+              <img src="office-before.jpg" alt="Office before organizing" style="width:100%;height:100%;object-fit:cover;display:block;"/>
+            </div>
+            <p style="font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:#8B7355; margin-top:0.5rem; text-align:center;">Before</p>
+          </div>
+          <div>
+            <div style="aspect-ratio:4/5; overflow:hidden;">
+              <img src="office-after.jpg" alt="Office after organizing" style="width:100%;height:100%;object-fit:cover;display:block;"/>
+            </div>
+            <p style="font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:#8B7355; margin-top:0.5rem; text-align:center;">After</p>
+          </div>
+        </div>
+        <p style="font-family:'Cormorant Garamond',serif; font-size:1.1rem; font-weight:400; color:#3D3530; margin-top:1rem; text-align:center;">Home Office</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-image">
+      <img src="lucy.jpg" alt="Lucy - The Linen Method" style="width:100%;height:100%;object-fit:cover;display:block;" />
+    </div>
+    <div class="about-text">
+      <p class="section-label">About</p>
+      <h2>A passion that started at home</h2>
+      <div class="divider"></div>
+      <p>Hi, I'm Lucy — a 13-year-old Dallas native with a genuine love for organizing. What started as rearranging my own room turned into something I couldn't stop doing. I started noticing how much calmer a space felt when everything had a place, and I wanted to bring that feeling to other people's homes too.</p>
+      <p>I may not have a degree, but I have a real eye for detail, a natural gift for systems, and the energy and dedication to transform your space — one drawer at a time.</p>
+      <p>Every project gets my full attention and care. I work with you, listen to how you live, and create solutions that actually stick.</p>
+      <a href="#contact" class="btn" style="margin-top:1rem;">Let's Work Together</a>
+    </div>
+  </section>
+
+  <!-- STRIP -->
+  <div class="strip">
+    <h2>Ready for a calmer home?</h2>
+    <p>Serving Dallas, TX and surrounding areas.</p>
+    <a href="#contact" class="btn btn-white">Book Your Free Consultation</a>
+  </div>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-wrap">
+      <div class="contact-info">
+        <p class="section-label">Get in Touch</p>
+        <h2>Let's get started</h2>
+        <div class="divider"></div>
+        <h3>I'd love to hear from you.</h3>
+        <p>Fill out the form and I'll be in touch within 24 hours to schedule your free 30-minute consultation.</p>
+        <div class="contact-detail">
+          <span>Location</span>
+          <p>Dallas, TX & surrounding areas</p>
+          <span>Email</span>
+          <p>hello@thelinenmethod.com</p>
+        </div>
+      </div>
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" onsubmit="handleSubmit(event)">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <input type="tel" placeholder="Phone Number (optional)" />
+        <select>
+          <option value="" disabled selected>Select a Service</option>
+          <option>Home Organizing</option>
+          <option>Kitchen & Pantry</option>
+          <option>Closet Organization</option>
+          <option>Office Organization</option>
+          <option>Multiple / Not Sure</option>
+        </select>
+        <textarea placeholder="Tell me a little about your space and what you're hoping to achieve..."></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div style="display:flex;align-items:center;justify-content:center;gap:0.6rem;margin-bottom:0.75rem;">
+      <svg width="32" height="32" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="66" width="56" height="8" rx="1.5" fill="#C9B99A" opacity="0.6"/>
+        <rect x="2" y="66" width="56" height="2.5" rx="1" fill="#B8A888" opacity="0.6"/>
+        <rect x="7" y="18" width="14" height="48" rx="1.5" fill="#FAF7F2" opacity="0.7"/>
+        <rect x="7" y="18" width="14" height="4" rx="1" fill="#E8DDD0" opacity="0.7"/>
+        <rect x="24" y="30" width="12" height="36" rx="1.5" fill="#C9B99A" opacity="0.6"/>
+        <rect x="24" y="30" width="12" height="3.5" rx="1" fill="#B8A888" opacity="0.6"/>
+        <path d="M40 66 L42 60 L54 60 L56 66 Z" fill="#FAF7F2" opacity="0.5"/>
+        <rect x="41" y="57.5" width="14" height="3.5" rx="1" fill="#C9B99A" opacity="0.6"/>
+        <line x1="47" y1="57" x2="47" y2="46" stroke="#8AAD78" stroke-width="1" stroke-opacity="0.7"/>
+        <ellipse cx="47" cy="40" rx="4.5" ry="11" fill="#7A9B6A" opacity="0.7" transform="rotate(-12 47 40)"/>
+        <ellipse cx="53" cy="36" rx="4" ry="10" fill="#6A8A5A" opacity="0.7" transform="rotate(18 53 36)"/>
+        <ellipse cx="41" cy="38" rx="3.5" ry="9" fill="#7A9B6A" opacity="0.7" transform="rotate(-28 41 38)"/>
+      </svg>
+      <span class="footer-logo" style="margin-bottom:0;">The Linen Method</span>
+    </div>
+    <p>Refined spaces. Peaceful lives. &nbsp;·&nbsp; Dallas, TX</p>
+    <div style="display:flex;justify-content:center;gap:2rem;margin-top:1.25rem;margin-bottom:1rem;">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <p style="margin-top:0.5rem; opacity:0.6;">© 2026 The Linen Method. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Smooth active nav highlight
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(sec => {
+        if (window.scrollY >= sec.offsetTop - 120) current = sec.getAttribute('id');
+      });
+      navLinks.forEach(link => {
+        link.style.color = link.getAttribute('href') === '#' + current ? 'var(--accent2)' : '';
+      });
+    });
+
+    // Form submit handler
+    function handleSubmit(e) {
+      const btn = e.target.querySelector('button');
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+      setTimeout(() => {
+        btn.textContent = 'Message Sent ✓';
+        btn.style.background = '#6A8F5A';
+      }, 1500);
+    }
+  </script>
+
+</body>
+</html>

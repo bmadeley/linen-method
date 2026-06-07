@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Linen Method — Logo Concepts</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Josefin+Sans:wght@100;200;300;400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Jost', sans-serif;
+      background: #F5F0EA;
+      color: #3D3530;
+      padding: 3rem 2rem;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      font-weight: 300;
+      text-align: center;
+      margin-bottom: 0.5rem;
+      color: #3D3530;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 0.78rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #8B7355;
+      margin-bottom: 3rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #FAF7F2;
+      border: 1px solid #E8DDD0;
+      padding: 1rem;
+    }
+
+    .logo-box {
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #FAF7F2;
+      padding: 2rem;
+    }
+
+    .logo-box.dark { background: #3D3530; }
+    .logo-box.cream { background: #EDE5D8; }
+
+    .card-label {
+      padding: 0.75rem 1rem 0.5rem;
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #8B7355;
+      border-top: 1px solid #E8DDD0;
+    }
+
+    /* ── LOGO 1: Elegant Wordmark with rule lines ── */
+    .logo-1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .logo-1 .rule {
+      width: 120px;
+      height: 1px;
+      background: #C9B99A;
+    }
+    .logo-1 .main {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      color: #3D3530;
+      text-transform: uppercase;
+    }
+    .logo-1 .sub {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 0.58rem;
+      letter-spacing: 0.38em;
+      text-transform: uppercase;
+      color: #8B7355;
+      font-weight: 300;
+    }
+
+    /* ── LOGO 2: Monogram circle ── */
+    .logo-2 {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+    }
+    .logo-2 .circle {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      border: 1.5px solid #C9B99A;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .logo-2 .monogram {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      font-style: italic;
+      color: #8B7355;
+      letter-spacing: 0.05em;
+    }
+    .logo-2 .text-stack {
+      display: flex;
+      flex-direction: column;
+    }
+    .logo-2 .name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.35rem;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #3D3530;
+      line-height: 1;
+    }
+    .logo-2 .tagline {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 0.55rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: #C9B99A;
+      font-weight: 300;
+      margin-top: 0.4rem;
+    }
+
+    /* ── LOGO 3: Folded corner icon ── */
+    .logo-3 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.9rem;
+    }
+    .logo-3 .icon {
+      position: relative;
+      width: 38px;
+      height: 38px;
+    }
+    .logo-3 .icon::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border: 1.5px solid #C9B99A;
+    }
+    .logo-3 .icon::after {
+      content: '';
+      position: absolute;
+      top: 0; right: 0;
+      width: 12px; height: 12px;
+      background: #FAF7F2;
+      border-left: 1.5px solid #C9B99A;
+      border-bottom: 1.5px solid #C9B99A;
+    }
+    .logo-3 .name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem;
+      font-weight: 300;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #3D3530;
+    }
+    .logo-3 .sub {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 0.55rem;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      color: #8B7355;
+      font-weight: 200;
+    }
+
+    /* ── LOGO 4: Stacked lines (dark bg) ── */
+    .logo-4 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.3rem;
+    }
+    .logo-4 .top-tag {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 0.55rem;
+      letter-spacing: 0.45em;
+      text-transform: uppercase;
+      color: #C9B99A;
+      font-weight: 300;
+    }
+    .logo-4 .the {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      font-weight: 300;
+      font-style: italic;
+      color: #C9B99A;
+      letter-spacing: 0.08em;
+      line-height: 1;
+    }
+    .logo-4 .linen {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.8rem;
+      font-weight: 500;
+      color: #FAF7F2;
+      letter-spacing: 0.1em;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+    .logo-4 .method {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 0.65rem;
+      letter-spacing: 0.55em;
+      text-transform: uppercase;
+      color: #C9B99A;
+      font-weight: 200;
+    }
+    .logo-4 .rule {
+      width: 100%;
+      height: 1px;
+      background: #8B7355;
+      margin: 0.3rem 0;
+    }
+
+    /* ── LOGO 5: Shelf lines icon ── */
+    .logo-5 {
+      display: flex;
+      align-items: center;
+      gap: 1.4rem;
+    }
+    .logo-5 .shelves {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      flex-shrink: 0;
+    }
+    .logo-5 .shelf {
+      height: 2px;
+      background: #C9B99A;
+      border-radius: 1px;
+    }
+    .logo-5 .shelf:nth-child(1) { width: 32px; }
+    .logo-5 .shelf:nth-child(2) { width: 24px; }
+    .logo-5 .shelf:nth-child(3) { width: 28px; }
+    .logo-5 .text-wrap { display: flex; flex-direction: column; }
+    .logo-5 .name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: #3D3530;
+      letter-spacing: 0.06em;
+    }
+    .logo-5 .name em {
+      font-style: italic;
+      color: #8B7355;
+    }
+    .logo-5 .sub {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 0.52rem;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: #C9B99A;
+      font-weight: 300;
+      margin-top: 0.3rem;
+    }
+
+    /* ── LOGO 6: Diamond badge ── */
+    .logo-6 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .logo-6 .badge {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .logo-6 .diamond {
+      width: 8px;
+      height: 8px;
+      background: #C9B99A;
+      transform: rotate(45deg);
+      flex-shrink: 0;
+    }
+    .logo-6 .name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.9rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #3D3530;
+    }
+    .logo-6 .bottom {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+    .logo-6 .line {
+      flex: 1;
+      height: 1px;
+      background: #C9B99A;
+      width: 55px;
+    }
+    .logo-6 .sub {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 0.52rem;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      color: #8B7355;
+      font-weight: 300;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Logo Concepts</h1>
+  <p class="subtitle">The Linen Method &nbsp;·&nbsp; Choose your favorite</p>
+
+  <div class="grid">
+
+    <!-- LOGO 1 -->
+    <div class="card">
+      <div class="logo-box">
+        <div class="logo-1">
+          <div class="rule"></div>
+          <div class="main">The Linen Method</div>
+          <div class="sub">Refined spaces &nbsp;·&nbsp; Peaceful lives</div>
+          <div class="rule"></div>
+        </div>
+      </div>
+      <div class="card-label">Concept 1 — Classic Wordmark</div>
+    </div>
+
+    <!-- LOGO 2 -->
+    <div class="card">
+      <div class="logo-box cream">
+        <div class="logo-2">
+          <div class="circle">
+            <span class="monogram">TL</span>
+          </div>
+          <div class="text-stack">
+            <span class="name">The Linen<br>Method</span>
+            <span class="tagline">Dallas, TX</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-label">Concept 2 — Monogram & Wordmark</div>
+    </div>
+
+    <!-- LOGO 3 -->
+    <div class="card">
+      <div class="logo-box">
+        <div class="logo-3">
+          <div class="icon"></div>
+          <div class="name">The Linen Method</div>
+          <div class="sub">Refined spaces &nbsp;·&nbsp; Peaceful lives</div>
+        </div>
+      </div>
+      <div class="card-label">Concept 3 — Folded Corner Icon</div>
+    </div>
+
+    <!-- LOGO 4 -->
+    <div class="card">
+      <div class="logo-box dark">
+        <div class="logo-4">
+          <div class="top-tag">Est. 2026 &nbsp;·&nbsp; Dallas, TX</div>
+          <div class="rule"></div>
+          <div class="the">The</div>
+          <div class="linen">Linen</div>
+          <div class="method">Method</div>
+          <div class="rule"></div>
+        </div>
+      </div>
+      <div class="card-label">Concept 4 — Stacked Editorial (Dark)</div>
+    </div>
+
+    <!-- LOGO 5 -->
+    <div class="card">
+      <div class="logo-box cream">
+        <div class="logo-5">
+          <div class="shelves">
+            <div class="shelf"></div>
+            <div class="shelf"></div>
+            <div class="shelf"></div>
+          </div>
+          <div class="text-wrap">
+            <span class="name">The <em>Linen</em> Method</span>
+            <span class="sub">Home Organizing &nbsp;·&nbsp; Dallas, TX</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-label">Concept 5 — Shelf Lines Icon</div>
+    </div>
+
+    <!-- LOGO 6 -->
+    <div class="card">
+      <div class="logo-box">
+        <div class="logo-6">
+          <div class="badge">
+            <div class="diamond"></div>
+            <div class="name">The Linen Method</div>
+            <div class="diamond"></div>
+          </div>
+          <div class="bottom">
+            <div class="line"></div>
+            <div class="sub">Refined spaces &nbsp;·&nbsp; Peaceful lives</div>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+      <div class="card-label">Concept 6 — Diamond Accent</div>
+    </div>
+
+  </div>
+
+</body>
+</html>

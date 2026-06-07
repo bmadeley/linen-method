@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
+  <!-- Background -->
+  <rect width="80" height="80" rx="16" fill="#FAF7F2"/>
+  <!-- Horizontal base book -->
+  <rect x="2" y="66" width="56" height="8" rx="1.5" fill="#8B6A45"/>
+  <rect x="2" y="66" width="56" height="2.5" rx="1" fill="#7A5A35"/>
+  <!-- Tall book -->
+  <rect x="7" y="18" width="14" height="48" rx="1.5" fill="#3D2B1A"/>
+  <rect x="7" y="18" width="14" height="4" rx="1" fill="#2D1E10"/>
+  <line x1="11" y1="24" x2="11" y2="64" stroke="#FAF7F2" stroke-width="1.2" stroke-opacity="0.6"/>
+  <!-- Short book -->
+  <rect x="24" y="30" width="12" height="36" rx="1.5" fill="#8B6A45"/>
+  <rect x="24" y="30" width="12" height="3.5" rx="1" fill="#7A5A35"/>
+  <line x1="27.5" y1="36" x2="27.5" y2="64" stroke="#FAF7F2" stroke-width="1.2" stroke-opacity="0.6"/>
+  <!-- Plant pot -->
+  <path d="M40 66 L42 60 L54 60 L56 66 Z" fill="#1A1008"/>
+  <rect x="41" y="57.5" width="14" height="3.5" rx="1" fill="#3D2B1A"/>
+  <!-- Stem -->
+  <line x1="47" y1="57" x2="47" y2="46" stroke="#2A4020" stroke-width="1.5"/>
+  <!-- Leaves -->
+  <ellipse cx="47" cy="40" rx="4.5" ry="11" fill="#3A6E2A" transform="rotate(-12 47 40)"/>
+  <ellipse cx="53" cy="36" rx="4" ry="10" fill="#2E5E20" transform="rotate(18 53 36)"/>
+  <ellipse cx="41" cy="38" rx="3.5" ry="9" fill="#3A6E2A" transform="rotate(-28 41 38)"/>
+</svg>

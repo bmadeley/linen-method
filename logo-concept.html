@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Linen Method — Logo Concept</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Josefin+Sans:wght@100;200;300;400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Josefin Sans', sans-serif;
+      background: #F0EBE3;
+      padding: 3rem 2rem;
+      color: #3D3530;
+    }
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem;
+      font-weight: 300;
+      text-align: center;
+      margin-bottom: 0.4rem;
+    }
+    .subtitle {
+      text-align: center;
+      font-size: 0.7rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #8B7355;
+      margin-bottom: 3rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .card {
+      border: 1px solid #DDD5CA;
+    }
+    .logo-box {
+      height: 240px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .label {
+      padding: 0.65rem 1rem;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #8B7355;
+      border-top: 1px solid #DDD5CA;
+    }
+
+    /* shared logo layout */
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .logo-stacked {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.2rem;
+    }
+    .logo-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.45rem;
+      font-weight: 400;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+    .logo-tag {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 0.5rem;
+      letter-spacing: 0.38em;
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+    .logo-rule {
+      width: 100%;
+      height: 1px;
+      margin: 0.25rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Your Logo Concept</h1>
+  <p class="subtitle">Books & Plant — Three color variations</p>
+
+  <div class="grid">
+
+    <!-- VARIATION 1: Warm Neutrals (Light bg) -->
+    <div class="card">
+      <div class="logo-box" style="background:#FAF7F2;">
+        <div class="logo">
+
+          <!-- SVG ICON -->
+          <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Horizontal book (base) -->
+            <rect x="2" y="66" width="56" height="8" rx="1.5" fill="#C9B99A"/>
+            <rect x="2" y="66" width="56" height="2.5" rx="1" fill="#B8A888"/>
+
+            <!-- Tall book (left standing) -->
+            <rect x="7" y="18" width="14" height="48" rx="1.5" fill="#8B7355"/>
+            <rect x="7" y="18" width="14" height="4" rx="1" fill="#7A6348"/>
+            <line x1="11" y1="24" x2="11" y2="64" stroke="#FAF7F2" stroke-width="0.7" stroke-opacity="0.35"/>
+
+            <!-- Short book (right standing) -->
+            <rect x="24" y="30" width="12" height="36" rx="1.5" fill="#C9B99A"/>
+            <rect x="24" y="30" width="12" height="3.5" rx="1" fill="#B8A888"/>
+            <line x1="27.5" y1="36" x2="27.5" y2="64" stroke="#FAF7F2" stroke-width="0.7" stroke-opacity="0.4"/>
+
+            <!-- Plant pot -->
+            <path d="M46 74 L44 60 L60 60 L58 74 Z" fill="#8B7355"/>
+            <rect x="43" y="57" width="18" height="5" rx="1.5" fill="#C9B99A"/>
+
+            <!-- Plant leaves -->
+            <ellipse cx="52" cy="44" rx="4.5" ry="11" fill="#9AB085" transform="rotate(-12 52 44)"/>
+            <ellipse cx="58" cy="40" rx="4" ry="10" fill="#7A9B6A" transform="rotate(18 58 40)"/>
+            <ellipse cx="46" cy="42" rx="3.5" ry="9" fill="#9AB085" transform="rotate(-28 46 42)"/>
+            <!-- stem -->
+            <line x1="52" y1="57" x2="52" y2="46" stroke="#6A7A5A" stroke-width="1" stroke-opacity="0.6"/>
+          </svg>
+
+          <!-- TEXT -->
+          <div class="logo-stacked">
+            <span style="font-family:'Josefin Sans',sans-serif; font-size:0.5rem; letter-spacing:0.35em; text-transform:uppercase; color:#C9B99A; font-weight:300;">The</span>
+            <span class="logo-name" style="color:#3D3530;">Linen<br>Method</span>
+            <div class="logo-rule" style="background:#C9B99A;"></div>
+            <span class="logo-tag" style="color:#8B7355;">Refined spaces · Peaceful lives</span>
+          </div>
+
+        </div>
+      </div>
+      <div class="label">Variation 1 — Light & Warm</div>
+    </div>
+
+    <!-- VARIATION 2: Dark bg -->
+    <div class="card">
+      <div class="logo-box" style="background:#3D3530;">
+        <div class="logo">
+
+          <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="66" width="56" height="8" rx="1.5" fill="#C9B99A"/>
+            <rect x="2" y="66" width="56" height="2.5" rx="1" fill="#B8A888"/>
+            <rect x="7" y="18" width="14" height="48" rx="1.5" fill="#FAF7F2"/>
+            <rect x="7" y="18" width="14" height="4" rx="1" fill="#E8DDD0"/>
+            <line x1="11" y1="24" x2="11" y2="64" stroke="#3D3530" stroke-width="0.7" stroke-opacity="0.2"/>
+            <rect x="24" y="30" width="12" height="36" rx="1.5" fill="#C9B99A"/>
+            <rect x="24" y="30" width="12" height="3.5" rx="1" fill="#B8A888"/>
+            <line x1="27.5" y1="36" x2="27.5" y2="64" stroke="#3D3530" stroke-width="0.7" stroke-opacity="0.2"/>
+            <path d="M46 74 L44 60 L60 60 L58 74 Z" fill="#C9B99A"/>
+            <rect x="43" y="57" width="18" height="5" rx="1.5" fill="#8B7355"/>
+            <ellipse cx="52" cy="44" rx="4.5" ry="11" fill="#7A9B6A" transform="rotate(-12 52 44)"/>
+            <ellipse cx="58" cy="40" rx="4" ry="10" fill="#6A8A5A" transform="rotate(18 58 40)"/>
+            <ellipse cx="46" cy="42" rx="3.5" ry="9" fill="#7A9B6A" transform="rotate(-28 46 42)"/>
+            <line x1="52" y1="57" x2="52" y2="46" stroke="#5A6A4A" stroke-width="1" stroke-opacity="0.7"/>
+          </svg>
+
+          <div class="logo-stacked">
+            <span style="font-family:'Josefin Sans',sans-serif; font-size:0.5rem; letter-spacing:0.35em; text-transform:uppercase; color:#C9B99A; font-weight:300;">The</span>
+            <span class="logo-name" style="color:#FAF7F2;">Linen<br>Method</span>
+            <div class="logo-rule" style="background:#8B7355;"></div>
+            <span class="logo-tag" style="color:#C9B99A;">Refined spaces · Peaceful lives</span>
+          </div>
+
+        </div>
+      </div>
+      <div class="label">Variation 2 — Dark & Elegant</div>
+    </div>
+
+    <!-- VARIATION 3: Cream bg, icon only centered -->
+    <div class="card">
+      <div class="logo-box" style="background:#EDE5D8;">
+        <div style="display:flex; flex-direction:column; align-items:center; gap:1.2rem;">
+
+          <svg width="100" height="90" viewBox="0 0 85 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Horizontal base book -->
+            <rect x="2" y="76" width="56" height="8" rx="1.5" fill="#8B7355"/>
+            <rect x="2" y="76" width="56" height="2.5" rx="1" fill="#7A6348"/>
+
+            <!-- Tall book (left standing) -->
+            <rect x="7" y="28" width="14" height="48" rx="1.5" fill="#3D3530"/>
+            <rect x="7" y="28" width="14" height="4" rx="1" fill="#2D2520"/>
+            <line x1="11" y1="34" x2="11" y2="74" stroke="#EDE5D8" stroke-width="0.7" stroke-opacity="0.3"/>
+
+            <!-- Short book (right standing) -->
+            <rect x="24" y="40" width="12" height="36" rx="1.5" fill="#8B7355"/>
+            <rect x="24" y="40" width="12" height="3.5" rx="1" fill="#7A6348"/>
+            <line x1="27.5" y1="46" x2="27.5" y2="74" stroke="#EDE5D8" stroke-width="0.7" stroke-opacity="0.35"/>
+
+            <!-- Plant pot sitting ON TOP of base book -->
+            <path d="M40 76 L42 70 L54 70 L56 76 Z" fill="#3D3530"/>
+            <rect x="41" y="67.5" width="14" height="3.5" rx="1" fill="#8B7355"/>
+
+            <!-- Stem -->
+            <line x1="47" y1="67" x2="47" y2="56" stroke="#5A6A4A" stroke-width="1" stroke-opacity="0.8"/>
+
+            <!-- Leaves -->
+            <ellipse cx="47" cy="50" rx="4.5" ry="11" fill="#7A9B6A" transform="rotate(-12 47 50)"/>
+            <ellipse cx="53" cy="46" rx="4" ry="10" fill="#6A8A5A" transform="rotate(18 53 46)"/>
+            <ellipse cx="41" cy="48" rx="3.5" ry="9" fill="#7A9B6A" transform="rotate(-28 41 48)"/>
+          </svg>
+
+          <div style="text-align:center;">
+            <div style="font-family:'Josefin Sans',sans-serif; font-size:0.5rem; letter-spacing:0.38em; text-transform:uppercase; color:#8B7355; font-weight:300; margin-bottom:0.3rem;">The</div>
+            <div style="font-family:'Cormorant Garamond',serif; font-size:1.6rem; font-weight:400; letter-spacing:0.18em; text-transform:uppercase; color:#3D3530; line-height:1;">Linen Method</div>
+            <div style="width:40px; height:1px; background:#C9B99A; margin:0.5rem auto;"></div>
+            <div style="font-family:'Josefin Sans',sans-serif; font-size:0.48rem; letter-spacing:0.35em; text-transform:uppercase; color:#8B7355; font-weight:300;">Refined spaces · Peaceful lives</div>
+          </div>
+
+        </div>
+      </div>
+      <div class="label">Variation 3 — Stacked & Centered</div>
+    </div>
+
+  </div>
+
+</body>
+</html>
