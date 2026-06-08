@@ -665,11 +665,11 @@
           <p>hello@thelinenmethod.com</p>
         </div>
       </div>
-      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" onsubmit="handleSubmit(event)">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Email Address" required />
-        <input type="tel" placeholder="Phone Number (optional)" />
-        <select>
+      <form id="contact-form" onsubmit="handleSubmit(event)">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Email Address" required />
+        <input type="tel" name="phone" placeholder="Phone Number (optional)" />
+        <select name="service">
           <option value="" disabled selected>Select a Service</option>
           <option>Home Organizing</option>
           <option>Kitchen & Pantry</option>
@@ -677,7 +677,7 @@
           <option>Office Organization</option>
           <option>Multiple / Not Sure</option>
         </select>
-        <textarea placeholder="Tell me a little about your space and what you're hoping to achieve..."></textarea>
+        <textarea name="message" placeholder="Tell me a little about your space and what you're hoping to achieve..."></textarea>
         <button type="submit" class="btn">Send Message</button>
       </form>
     </div>
@@ -729,14 +729,30 @@
     });
 
     // Form submit handler
-    function handleSubmit(e) {
-      const btn = e.target.querySelector('button');
+    async function handleSubmit(e) {
+      e.preventDefault();
+      const form = e.target;
+      const btn = form.querySelector('button');
       btn.textContent = 'Sending...';
       btn.disabled = true;
-      setTimeout(() => {
-        btn.textContent = 'Message Sent ✓';
-        btn.style.background = '#6A8F5A';
-      }, 1500);
+      try {
+        const resp = await fetch('https://formspree.io/sigjack13@gmail.com', {
+          method: 'POST',
+          headers: { 'Accept': 'application/json' },
+          body: new FormData(form),
+        });
+        if (resp.ok) {
+          btn.textContent = 'Message Sent ✓';
+          btn.style.background = '#6A8F5A';
+          form.reset();
+        } else {
+          btn.textContent = 'Try Again';
+          btn.disabled = false;
+        }
+      } catch {
+        btn.textContent = 'Try Again';
+        btn.disabled = false;
+      }
     }
   </script>
 
